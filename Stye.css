@@ -1,0 +1,378 @@
+@charset "utf-8" ;
+
+/* 全体レイアウト開始 */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	color: #6eb5c0;
+}
+a:hover {
+	color:  #ffccbb;
+
+}
+header h1 a {
+	display: inline-block;
+	vertical-align: bottom;
+}
+header h1 a img {
+	vertical-align: bottom;
+}
+#contents {
+	overflow: hidden;
+}
+
+#contents h1 {
+	font-family: Segoe Print;
+	font-size: 300%;
+}
+.bnr {
+	margin-bottom: 6px;
+	vertical-align: bottom;
+	text-decoration: none;
+}
+.bnr dl, .bnr dt, .bnr dd, .bnr p{
+	margin: 0;
+}
+#pagetop {
+	margin-bottom: 0px;
+	float: right;
+}
+#pagetop a {
+	display: block;
+	padding: 31px 31px 31px 31px;
+	background-image: url(../images/top.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+#copyright {
+	margin-bottom: 15px;
+	text-align: center;
+}
+#copyright small {
+	font-size: 100%;
+}
+
+/* 全体レイアウト終了 */
+
+/* Baseレイアウト開始 */
+
+body {
+	background-color: #e2e8e4;
+	color: #006c84;
+}
+
+header, nav,#contents, footer {
+	width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header h1 {
+	margin: 0 0 15px 0;
+	padding: 30px;
+	text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    width: 210px;
+    float: left;
+}
+
+ nav ul li a {
+    display: block;
+    height: 0;
+    padding-top: 70px;
+    overflow: hidden;
+} 
+
+nav ul li#nav_introduction {
+	background-image: url(../images/introduction_nav.png);
+}
+nav ul li#nav_Illustrator {
+	background-image: url(../images/Illustrator_nav.png);
+}
+
+nav ul li#nav_HTMLCSS {
+	background-image: url(../images/HTMLCSS_nav.png);
+}
+
+nav ul li#nav_Photoshop {
+	background-image: url(../images/Photoshop_nav.png);
+}  
+
+#introduction #nav_introduction,#Illustrator #nav_Illustrator,#HTMLCSS #nav_HTMLCSS,#Photoshop #nav_Photoshop,nav ul li:hover {
+	background-position: 0 -70px;
+}
+
+.bnr img:hover {
+	opacity: 0.8;
+}
+
+#main {
+    width: 600px;
+    float:left ;
+}
+
+#main article h1 {
+	text-align: center;
+}
+
+#sub {
+	width: 210px;
+	float: right;
+	margin-top: 20px;
+}
+
+#sub img{
+	width: 210px;
+}
+
+footer {
+    padding: 30px;
+}
+
+/* Baseレイアウト終了 */
+
+/* indexレイアウト開始 */
+
+#graphic {
+	width: 840px;
+	margin: auto;
+}
+
+#graphic ul {
+	display: block;
+	list-style: none;
+	padding-left: 0;
+	position: relative;
+}
+
+#graphic ul li {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+}
+#graphic ul li.now {
+	opacity: 1;
+}
+
+#graphic ul li img {
+	display: block;
+	margin: 0 auto;
+}
+
+#graphic ul li:nth-child(1) {
+	position: relative;
+	top: 0;
+	z-index: 4;
+}
+#graphic ul li:nth-child(2) {
+	z-index: 3;
+}
+#graphic ul li:nth-child(3) {
+	z-index: 2;
+}
+#graphic ul li:nth-child(4) {
+	z-index: 1;
+}
+#graphic ul li.now:nth-child(1) {
+	z-index: 0;
+}
+
+#news h2 {
+	text-align: center;
+}
+
+#news ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#news ul li {
+	padding: 20px 0 20px 175px;
+	border-bottom: 1px dotted #006c84;
+	text-indent: -175px;
+}
+
+/* indexレイアウト終了 */
+
+/* introductionレイアウト開始 */
+
+#introduction h2 {
+	text-align: center;
+}
+
+#introduction p {
+	text-align: center;
+}
+
+#profile p {
+	text-indent: 5px;
+}
+
+#hobby p {
+	text-indent: 15px;
+}
+
+#Academic p {
+	text-indent: 20px;
+}
+
+#Work p {
+	text-indent: 20px;
+}
+
+#license p {
+	text-indent: 20px;
+}
+
+#skill p {
+	text-align: left;
+}
+
+#skill .level img {
+	float: right;
+	padding-left: 50px;
+	width: 100px;
+	height: 100px;
+}
+
+/* introductionレイアウト終了 */
+
+/* Illustratorレイアウト開始 */
+
+#Illustrator h2 {
+	text-align: center;
+}
+
+#Illustrator h3, p {
+	text-align: center;
+}
+
+#season img {
+	width: 420px;
+	height: 250px;
+	padding: 0 0 20px 100px;
+}
+
+#calendar img {
+	width: 420px;
+	height: 250px;
+	padding: 0 0 20px 100px;
+}
+
+#pets img {
+	width: 420px;
+	height: 250px;
+	padding: 0 0 20px 100px;
+}
+
+#Black img {
+	padding-left: 170px;
+}
+
+#Mystic img {
+	padding-left: 170px;
+}
+
+#Refraction img {
+	padding-left: 170px;
+}
+
+/* Illustratorレイアウト終了 */
+
+/* HTMLCSSレイアウト開始 */
+
+#HTMLCSS h2 {
+	text-align: center;
+}
+
+#HTMLCSS p {
+	text-align: center;
+}
+/* HTMLCSSレイアウト終了 */
+
+/* Photoshopレイアウト開始 */
+
+#Photoshop h2 {
+	text-align: center;
+}
+
+#Photoshop h3 {
+	text-align: center;
+}
+
+#Photoshop #main p {
+	text-align: center;
+}
+
+#Photoshop #main #horse img {
+	width: 630px;
+	height: 443px;
+	padding-left:10px;
+}
+
+#Photoshop #main #steak img {
+	width: 630px;
+	height: 443px;
+	padding-left:10px;
+}
+
+#Photoshop #main #cafe #tirasi img {
+	width: 496px;
+	height: 700px;
+	padding: 0 0 20px 100px;
+}
+
+#Photoshop #main #cafe #yoko img {
+	width: 480px;
+	height:248px;
+	padding: 0 0 20px 100px;
+}
+
+#Photoshop #main #cafe #tate img {
+	width: 432px;
+	height: 540px;
+	padding: 0 0 20px 100px;
+}
+/* Photoshopレイアウト終了 */
+
+/* contactレイアウト開始 */
+
+#contact #main img {
+	width: 420px;
+	height: 250px;
+	padding-left: 90px;
+}
+
+#contact #main p {
+	text-align: center;
+}
+
+#contact #main h2 {
+	text-align: center;
+}
+/* contactレイアウト終了 */
